@@ -1,0 +1,272 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "SUSE";
+}
+.page1 {
+  width: 100%;
+  height: 100%;
+  background-image: url(image/hero.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: #00000080;
+  position: absolute;
+  top: 0;
+}
+.overlay nav{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px; 
+}
+nav .logo h1{
+    font-size: 30px;
+    color:  #8aea4b8e;
+    cursor: pointer;
+}
+nav .logo h1 strong{
+    font-size: 40px;
+}
+nav .nav-pills{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+}
+.nav-pills li{
+    list-style: none;
+    cursor: pointer;
+    font-weight: 700;
+    color: #292929;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.nav-pills li:hover{
+    color: #fff;
+}
+nav button{
+    background-color: #fff;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+nav button:hover{
+    background-color: #000;
+    color: #fff;
+}
+header{
+    width: 100%;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: #fff;
+}
+header h3{
+    font-size: 30px;
+    font-family: "Sour Gummy";
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+header h1{
+    font-size: 70px;
+    text-transform: uppercase;
+    color:  #8aea4b8e;
+}
+header p{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+header .buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+header .buttons button , .content button{
+    background-color: transparent;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 2px solid #fff;
+    transition: .25s all;
+    width: 200px;
+}
+
+header .buttons button:hover{
+    background-color: #8aea4b8e;
+    border: none;
+}
+header .buttons button:first-child, .content button{
+    background-color: #8aea4b8e;
+    color: #fff;
+    border: none;
+}
+
+header .buttons button:first-child:hover{
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+}
+.page2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.page2 h2{
+    width: 75%;
+    margin: auto;
+    /* border: 1px solid; */
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 5%;
+}
+.line{
+    width: 75%;
+    margin: auto;
+    height: 2px;
+    background-color: #8aea4b8e;
+}
+.cards{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px;
+    margin-top: -3%;
+}
+.card{
+    width: 220px;
+    height: 280px;
+    border-radius: 20px;
+    background-image: url(image/walking.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+
+}
+.card:hover > .sublay{
+    bottom: 0;
+    opacity: 1;
+    transition:.5s all;
+
+}
+.card:nth-child(2){
+    background-image: url(image/explore-nature.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;   
+}
+.card:nth-child(3){
+    background-image: url(image/physical-activity.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;   
+}
+.card:nth-child(4){
+    background-image: url(image/connections.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;   
+}
+.sublay{
+    width: 100%;
+    height: 100%;
+    background-color: #00000080;
+    color: #fff;
+    padding: 10px;
+    position: absolute;
+    bottom: -100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    opacity: 0;    
+}
+.sublay h1{
+    font-size: 22px;
+    text-align: right;
+}
+.sublay p{
+    font-size: 14px;
+    text-align: right;
+}
+.page2 a{
+    width: 100px;
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #8aea4b8e;
+    margin-left: 80%;
+    margin-top: -3%;
+}
+.page2 .wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    gap: 30px;
+}
+.wrapper .image{
+    width: 50%;
+}
+.wrapper .image img{
+    width: 100%;
+    border-radius: 20px;
+}
+.wrapper .content{
+    width: 50%;
+}
+.wrapper .content h1{
+    width: 80%;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+.wrapper .content p{
+    width: 92%;
+}
+.wrapper .content button{
+    margin-top: 5%;
+    color: #000;
+}
