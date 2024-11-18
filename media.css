@@ -1,0 +1,157 @@
+@media screen and (max-width: 678px) {
+  .page1,
+  .overlay {
+    height: 100vh;
+  }
+  .overlay .nav-pills {
+    display: none;
+  }
+  .menu {
+    display: initial;
+    font-size: 20px;
+    font-weight: 900;
+  }
+  .overlay nav {
+    padding: 10px;
+  }
+  nav button {
+    padding: 5px 10px;
+  }
+  header {
+    margin-top: 40%;
+  }
+  header h3 {
+    font-size: 25px;
+  }
+  header p {
+    width: 90%;
+    font-size: 13px;
+  }
+  header .buttons button {
+    width: 150px;
+    padding: 5px 10px;
+  }
+  .page2 .booking-form {
+    margin-top: -30%;
+    min-height: 15%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .form-group {
+    border: none;
+    width: 100%;
+  }
+  .form-group:nth-child(4) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .form-group:nth-child(5) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  .page2 h2 {
+    margin-top: 20%;
+  }
+  .line {
+    width: 90%;
+  }
+  .cards {
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    justify-content: flex-start;
+    margin-top: 3%;
+  }
+  .card {
+    width: 48%;
+  }
+  .page2 a {
+    margin-left: 69%;
+    margin-top: 3%;
+  }
+  .page2 .wrapper{
+    flex-direction: column-reverse;
+    padding: 10px;
+    margin-top: 5%;
+  }
+  .wrapper .image{
+    width: 100%;
+  }
+  .wrapper .image img{
+    border-radius: 2px;
+  }
+  .wrapper .content {
+width: 100%;
+  }
+  .wrapper .content h1{
+    width: 100%;
+    font-size: 35px;
+    line-height: 38px;
+  }
+  .page3{
+    padding: 8px;
+    padding-bottom: 20px;
+  }
+  .page3 > h2{
+    width: 100%;
+    text-align: left;
+  }
+  .page3 > h1{
+    width: 100%;
+    font-size: 30px;
+    margin: 0;
+  }
+  .page3 .cards{
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+  }
+  .page3 .cards .card{
+    width: 100%;
+    overflow: visible;
+  }
+  .page3 .cards .card h1{
+    left: -8%;
+  }
+  .page4 {
+    flex-direction: column;
+    padding: 10px;
+    padding-top: 50px;
+  }
+  .page4 .quote > h1{
+    font-size: 40px;
+    text-align: center;
+  }
+  .page5{
+    padding-top: 10%;
+  }
+  .page5 .container{
+    padding: 10px;
+  }
+  .container h1{
+    font-size: 40px;
+  }
+  .gridLayout{
+    width: 100%;
+  }
+  .social-links{
+    gap: 10px;
+}
+.follow img{
+    width: 30px;
+}
+.follow p{
+    margin-bottom: 10%;
+}
+footer span{
+    font-size: 11px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+}
+
